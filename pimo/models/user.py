@@ -32,3 +32,6 @@ class User(AbstractUser, models.Model):
     @property
     def dislikes(self):
         return self.grades.filter(is_liked=False).count()
+
+    def __str__(self):
+        return self.username
