@@ -1,5 +1,7 @@
 from django.db import models
 from pimo.models import Order
+from pimo.models import User
+
 
 class Offer(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)

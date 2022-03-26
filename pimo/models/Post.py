@@ -1,5 +1,7 @@
 from django.db import models
 
+from pimo.models import User
+
 
 class Post(models.Model):
     title = models.CharField('Title', max_length=50)
